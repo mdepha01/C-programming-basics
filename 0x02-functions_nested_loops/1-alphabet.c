@@ -2,8 +2,7 @@
 #include "main.h"
 
 /**
- *main - entry point
- * print_alphabet- Entry point
+ * print_alphabet - Prints alphabts from a to z
  * Return: void or nothing
  */
 
