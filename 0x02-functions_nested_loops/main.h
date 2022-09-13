@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /** 
- * This is ha header file for function prototypes
+ * This is a header file for function prototypes
  */
 int _putchar(char c);
 void print_alphabet(void);
@@ -10,3 +10,4 @@ int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
+int print_last_digit(int);
