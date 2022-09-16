@@ -1,29 +1,31 @@
-#include "main.h"
-#include <unistd.h>
-
+#include <stdio.h>
 /**
- * main - Entry point
- * on multiples of 3, 5 or both respectively
- * Return: Always 0
+ * main - Solving the Fizz Buzz
+ * problem
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	int i;
+	int i = 1;
 
-	for (i = 1; i <= 100; i++)
+	while (i <= 100)
 	{
-		if ( i == 100)
-		{
-			printf("Buzz\n");
-		}
-		else if (i % 3 == 0 && i % 5 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz ");
 		}
 		else if (i % 5 == 0)
 		{
-			printf("Buzz ");
+			if (i == 100)
+			{
+				printf("Buzz");
+				printf("\n");
+			}
+			else
+			{
+				printf("Buzz ");
+			}
 		}
 		else if (i % 3 == 0)
 		{
@@ -33,6 +35,5 @@ int main(void)
 		{
 			printf("%d ", i);
 		}
+		i++;
 	}
-	return (0);
-}
