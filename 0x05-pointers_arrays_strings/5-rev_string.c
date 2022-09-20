@@ -9,16 +9,18 @@
 
 void rev_string(char *s)
 {
-	char Temp;
-	char *address1 = s;
-	char *address2 = address1 + 8;
+	int a, b;
+	char c;
 
-	while (address1 != address2)
+	for (a = '\0'; s[a] != 0; a++)
 	{
-		Temp = *address1;
-		*address1 = *address2;
-		*address2 = Temp;
-		address1++;
-		address2--;
+	}
+	b = 0;
+	for (a = a - 1; b < a; b++)
+	{
+		c = s[a];
+		s[a] = s[b];
+		s[b] = c;
+		a--;
 	}
 }
