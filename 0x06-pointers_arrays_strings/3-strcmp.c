@@ -28,8 +28,8 @@ int _strcmp(char *s1, char *s2)
 		else
 		{
 			count = (s1[i] - s2[i]);
-			break;
 		}
+		i++;
 	}
 	return (count);
 }
